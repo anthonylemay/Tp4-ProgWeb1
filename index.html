@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/ahs2gaz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+    <title>Web Dictionary</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h1>The Free Dictionary API Build</h1>
+            <div class="container">
+                <form id="search__form" class="searchBox">
+                    <input type="search" placeholder="What word are you looking for?" id="query" name="query">
+                    <button id="searchBtn">Search</button>
+                </form>
+                <div class="error__section" id="error__section">
+                    <h2 id="error__alert"></h2>
+                </div>
+                <div class="result" id="result__list">
+                    <div class="resultWord">
+                        <h2 id="result__word"></h2>
+                    </div>
+                    <div class="resultPhonetic">
+                        <h3 id="result__phonetic"></h3>
+                    </div>
+                    <div class="definitionList">
+                        <ul id="result__meaning"></ul>
+                    </div>
+                    <div id="result__example">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©Anthony Lemay 2023 - TP4 - Programmation Web</p>
+    </footer>
+</body>
+
+</html>

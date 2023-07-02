@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1b1b;
+    font-family:"aktiv-grotesk", sans-serif;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    background-color: #747474;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20rem auto;
+    padding: 5rem 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(5, 5, 5, 0.2);
+}
+
+.searchBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.searchBox input {
+    border-radius: 50px;
+    padding: 0.25rem 0.25rem 0.25rem 1rem;
+    width: 72%;
+    border: none;
+    font-size: 1rem;
+    height:3rem;
+}
+
+.searchBox button {
+
+    width: 22%;
+    background-color: #e2aa30;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.searchBox button:hover {
+    background-color: #000000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+h1{
+    padding:1rem;
+    margin:1rem auto;
+    display:flex;
+    justify-content: center;
+    color:#dfdfdf
+
+}
+
+footer{
+        padding:1rem;
+        margin:1rem auto;
+        display:flex;
+        justify-content: center;
+        color:#dfdfdf
+
+}
+
+.result {
+    position: relative;
+}
+
+.resultWord{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.resultWord h2{
+    color:#1b1b1b;
+    margin: 0 0 1rem 0;
+    padding:0.5rem 0.5rem 0.5rem 0;
+    font-size:2rem;
+}
+
+.resultWord h2:hover{
+    color: #ffffff;
+    background-color: #a3a3a3;
+    border-radius:0.25rem;
+    padding:0.5rem;
+}
+
+.result h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+.result button {
+    background-color: transparent;
+    color: #e2aa30;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.resultPhonetic {
+    display: flex;
+    gap: 0.5rem;
+    color: #e2aa30;
+    margin: 5px 0 20px 0;
+    font-size: 0.75rem;
+}
+
+.resultPhonetic:hover {
+    text-decoration: underline;
+}
+
+.poSpeech {
+    color: #d5d5d5;
+    font-style: italic;
+    margin: 1rem 0 0 0;
+}
+
+.poSpeech:hover {
+    color: #ffffff;
+    font-style: normal;
+}
+
+.definitionList li::marker{
+    color:#e2aa30;
+}
+
+.definitionList li{
+    list-style: square inside;
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.resultDefinition {
+    color: #ffffff;
+}
+
+
+.resultDefinition:hover{
+    background-color: #a3a3a3;
+    border-radius:0.25rem;
+    padding:0.5rem;
+}
+.resultExample {
+    color: #a3a3a3;
+    font-style: italic;
+    border-left: 0.25rem solid #e2aa30;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.resultExample:hover {
+    color: #ffffff;
+}
+
+#result__list{
+    display:none;
+}
+
+#result__list.active{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#error__section{
+    display:none;
+}
+
+#error__section.active{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#error__alert{
+    margin-top:3rem;
+    font-size:1rem;
+    color:#ff6f6f;
+}
